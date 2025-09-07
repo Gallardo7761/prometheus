@@ -49,18 +49,21 @@
    ESTILOS BASE / RESET SUAVE
 ================================== */
 html,
-body {
+body, #root {
   font-family: "Open Sans", sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
 }
 
-body {
-  background-color: transparent !important; /* compatibilidad navbar fija */
-}
+/*body {
+  background-color: transparent !important; compatibilidad navbar fija
+}*/
 
 main {
+  flex: 1;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
